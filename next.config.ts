@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
   images: {
-    domains: ['images.unsplash.com']
+    unoptimized: true, // Disable image optimization for static export
+    // domains: ['images.unsplash.com'] // Allow domains for remote images
   }
+
 };
 
 export default nextConfig;
